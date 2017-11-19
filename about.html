@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="favicon.png">
+    <title>首页</title>
+    <style>
+      html, body, .container{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body{
+        background-image: url('img/about-bg.jpg');
+      }
+
+      /* 导航 */
+      .nav{
+        width: 80%;
+        margin: 0 auto;
+        vertical-align: middle;
+      }
+
+      /* logo */
+      .nav>a.logo{
+        float: left;
+      }
+      .nav>ul{
+        margin: 0;
+        list-style: none;
+        position: relative;
+        left: 30px;
+        top: 20px;
+        /*padding: 20px 0;*/
+      }
+      .nav>ul>li{
+        display: inline-block;
+        padding: 5px 20px;
+        font-size: 15px;
+      }
+      .nav>ul>li.active{
+        background-color: #eee;
+        border-radius: 2px;
+        color: #000;
+      }
+      .nav>ul>li>a{
+        text-decoration: none;
+        color: #817b59;
+        font-weight: 500;
+      }
+
+      /* 内容 */
+      div.container-content{
+        margin: 100px auto 0 auto;
+        width: 80%;
+      }
+      .content{
+        width: 180px;
+        border: 1px solid #e9e9e9;
+        display: inline-block;
+      }
+      .content:hover{
+        box-shadow: 0 1px 6px rgba(0,0,0,.2);
+        border-color: rgba(0,0,0,.2);
+      }
+
+      /* 内容区图片 */
+      .content>img{
+        width: 100%;
+        margin: 0;
+      }
+
+      /* 内容区文本 */
+      .content>figcaption{
+        padding: 10px 16px;
+      }
+      .content>figcaption>h4, .content>figcaption>p{
+        padding: 0;
+        margin: 0;
+        font-size: 13px;
+        line-height: 18px;
+      }
+      .content>figcaption>p{
+        color: #999;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+      <a href="index.html" class="logo"><img src="favicon.png"/></a>
+      <ul>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="thing.html">东西</a></li>
+        <li class="active"><a href="about.html">关于我们</a></li>
+      </ul>
+    </nav>
+    <div class="container-content">
+      <figure class="content">
+        <img src="img/content-1.png">
+        <figcaption>
+          <h4>叶子</h4>
+          <p>我滴老家~就住在这个屯儿</p>
+        </figcaption>
+      </figure>
+      <figure class="content">
+        <img src="img/content-3.jpg">
+        <figcaption>
+          <h4>Ye</h4>
+          <p>my old home~ this tun er</p>
+        </figcaption>
+      </figure>
+    </div>
+  </body>
+</html>
